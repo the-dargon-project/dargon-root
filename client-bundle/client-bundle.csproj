@@ -31,7 +31,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Dargon.Nest.Egg.Api, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Dargon.Nest.Egg.Api">
       <HintPath>..\packages\Dargon.Nest.Egg.Api.0.1.1\lib\net45\Dargon.Nest.Egg.Api.dll</HintPath>
       <Private>True</Private>
     </Reference>
