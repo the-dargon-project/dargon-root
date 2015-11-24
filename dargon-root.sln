@@ -320,6 +320,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nest-bundle", "nest-bundle\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "start-nest-core-and-client", "start-nest-core-and-client\start-nest-core-and-client.csproj", "{0C34F00A-3235-4E16-BB79-7467F47D3CF7}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B1C7F2E4-06E2-4B0E-B6E9-A4DB161F19A9}"
+	ProjectSection(SolutionItems) = preProject
+		License - Dargon.txt = License - Dargon.txt
+		License - ItzWarty.txt = License - ItzWarty.txt
+		README - Licensing = README - Licensing
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Console|Any CPU = Console|Any CPU
