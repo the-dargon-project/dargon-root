@@ -1,0 +1,8 @@
+﻿{
+    "init-hooks": [
+        {
+            "type": "run-egg",
+            "egg-name": "cored"
+        }
+    ]
+}

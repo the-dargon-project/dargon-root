@@ -30,10 +30,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Dargon.Nest.Egg.Api">
-      <HintPath>..\packages\Dargon.Nest.Egg.Api.0.1.1\lib\net45\Dargon.Nest.Egg.Api.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -52,9 +48,9 @@
       <Project>{480E9F3C-57A2-4E52-9F13-6708EDE5BDD1}</Project>
       <Name>Dargon.Nest.DevelopmentUtilities</Name>
     </ProjectReference>
-    <ProjectReference Include="..\dargon\trinket-proxy-impl\trinket-proxy-impl.csproj">
-      <Project>{00DC580F-4A8C-4B62-915E-E22095C49B0E}</Project>
-      <Name>trinket-proxy-impl</Name>
+    <ProjectReference Include="..\dargon\trinket-proxy\trinket-proxy.csproj">
+      <Project>{00dc580f-4a8c-4b62-915e-e22095c49b0e}</Project>
+      <Name>trinket-proxy</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

@@ -4,17 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{48649876-B379-406B-90C7-C81E6001FB0E}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{B851B3CA-8DCB-48E9-AF1A-A4A9800D78B4}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>start_nest_and_core</RootNamespace>
-    <AssemblyName>start-nest-and-core</AssemblyName>
+    <RootNamespace>nest_bundle</RootNamespace>
+    <AssemblyName>nest-bundle</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -43,28 +40,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="NestBundle.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\core-bundle\core-bundle.csproj">
-      <Project>{55278C7A-3D94-433B-B459-B3D9D2CDA96E}</Project>
-      <Name>core-bundle</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Dargon.Nest.DevelopmentUtilities\Dargon.Nest.DevelopmentUtilities.csproj">
-      <Project>{480E9F3C-57A2-4E52-9F13-6708EDE5BDD1}</Project>
+      <Project>{480e9f3c-57a2-4e52-9f13-6708ede5bdd1}</Project>
       <Name>Dargon.Nest.DevelopmentUtilities</Name>
     </ProjectReference>
-    <ProjectReference Include="..\nest-bundle\nest-bundle.csproj">
-      <Project>{b851b3ca-8dcb-48e9-af1a-a4a9800d78b4}</Project>
-      <Name>nest-bundle</Name>
+    <ProjectReference Include="..\nest\nest-host\nest-host.csproj">
+      <Project>{aa159659-6988-4a37-b849-8f2c090e415c}</Project>
+      <Name>nest-host</Name>
     </ProjectReference>
-    <ProjectReference Include="..\trinket-bundle\trinket-bundle.csproj">
-      <Project>{C3B730EF-991E-448B-818F-1DC1A72141B3}</Project>
-      <Name>trinket-bundle</Name>
+    <ProjectReference Include="..\nest\nest-spawner\nest-spawner.csproj">
+      <Project>{24793f93-0fd8-4ec9-b1d2-028db489b10d}</Project>
+      <Name>nest-spawner</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\nest\nestd\nestd.csproj">
+      <Project>{6a07d05b-4c55-44a7-a13f-43cf768a6adf}</Project>
+      <Name>nestd</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\nest\nest\nest.csproj">
+      <Project>{8da20e5b-af5d-4494-ac0c-6646019fa36e}</Project>
+      <Name>nest</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{48649876-B379-406B-90C7-C81E6001FB0E}</ProjectGuid>
+    <ProjectGuid>{0C34F00A-3235-4E16-BB79-7467F47D3CF7}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>start_nest_and_core</RootNamespace>
-    <AssemblyName>start-nest-and-core</AssemblyName>
+    <RootNamespace>start_nest_core_and_client</RootNamespace>
+    <AssemblyName>start-nest-core-and-client</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -50,20 +50,40 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\client-bundle\client-bundle.csproj">
+      <Project>{9742ed8d-6c30-4f17-93fd-d1a09164c6fb}</Project>
+      <Name>client-bundle</Name>
+    </ProjectReference>
     <ProjectReference Include="..\core-bundle\core-bundle.csproj">
-      <Project>{55278C7A-3D94-433B-B459-B3D9D2CDA96E}</Project>
+      <Project>{55278c7a-3d94-433b-b459-b3d9d2cda96e}</Project>
       <Name>core-bundle</Name>
     </ProjectReference>
     <ProjectReference Include="..\Dargon.Nest.DevelopmentUtilities\Dargon.Nest.DevelopmentUtilities.csproj">
-      <Project>{480E9F3C-57A2-4E52-9F13-6708EDE5BDD1}</Project>
+      <Project>{480e9f3c-57a2-4e52-9f13-6708ede5bdd1}</Project>
       <Name>Dargon.Nest.DevelopmentUtilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\dependencies\Dargon.PortableObjects\Dargon.PortableObjects.csproj">
+      <Project>{da87b9e0-3584-4448-97b5-9877cac44352}</Project>
+      <Name>Dargon.PortableObjects</Name>
     </ProjectReference>
     <ProjectReference Include="..\nest-bundle\nest-bundle.csproj">
       <Project>{b851b3ca-8dcb-48e9-af1a-a4a9800d78b4}</Project>
       <Name>nest-bundle</Name>
     </ProjectReference>
+    <ProjectReference Include="..\nest\Dargon.Nest.Egg.Api\Dargon.Nest.Egg.Api.csproj">
+      <Project>{52ac94a1-a1c0-43b2-8b1b-001cc11518be}</Project>
+      <Name>Dargon.Nest.Egg.Api</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\nest\Dargon.Nest.Exeggutor.Api\Dargon.Nest.Exeggutor.Api.csproj">
+      <Project>{7d1d757d-531b-49f0-8f63-b4e3563be606}</Project>
+      <Name>Dargon.Nest.Exeggutor.Api</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\nest\Dargon.Nest.Exeggutor.Host.Api\Dargon.Nest.Exeggutor.Host.Api.csproj">
+      <Project>{9c76f6ee-dac8-436a-8623-a8578353dfb9}</Project>
+      <Name>Dargon.Nest.Exeggutor.Host.Api</Name>
+    </ProjectReference>
     <ProjectReference Include="..\trinket-bundle\trinket-bundle.csproj">
-      <Project>{C3B730EF-991E-448B-818F-1DC1A72141B3}</Project>
+      <Project>{c3b730ef-991e-448b-818f-1dc1a72141b3}</Project>
       <Name>trinket-bundle</Name>
     </ProjectReference>
   </ItemGroup>
