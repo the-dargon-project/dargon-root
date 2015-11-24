@@ -42,6 +42,8 @@ Special thanks goes to: Brian Chan, Richard Min, and a ton of mentors. Also, vel
         * pof-streams - exposes pof streams and provides utilities for consuming them.
     * ryu - IoC container integrated with Dargon's tech
     * services - remote-method-invocation library
+    * NMockito - mocking framework
+    * NLombok - wip - lessens the boilerplate
     * random crap
         * audits - wip, owner Brian Chan
         * filesystems - abstracts filesystems, was once considered a good idea
