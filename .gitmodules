@@ -68,7 +68,7 @@
 	branch = master
 [submodule "dependencies/Dargon.VirtualFileMaps"]
 	path = dependencies/Dargon.VirtualFileMaps
-	url = git@github.com/the-dargon-project/Dargon.VirtualFileMaps.git
+	url = git@github.com:the-dargon-project/Dargon.VirtualFileMaps.git
 	branch = master
 [submodule "dependencies/Dargon.Repl"]
 	path = dependencies/Dargon.Repl
