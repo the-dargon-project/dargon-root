@@ -62,25 +62,25 @@
       <Project>{480e9f3c-57a2-4e52-9f13-6708ede5bdd1}</Project>
       <Name>Dargon.Nest.DevelopmentUtilities</Name>
     </ProjectReference>
-    <ProjectReference Include="..\dependencies\Dargon.PortableObjects\Dargon.PortableObjects.csproj">
+    <ProjectReference Include="..\..\dependencies\Dargon.PortableObjects\Dargon.PortableObjects.csproj">
       <Project>{da87b9e0-3584-4448-97b5-9877cac44352}</Project>
       <Name>Dargon.PortableObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\nest\Dargon.Nest.Egg.Api\Dargon.Nest.Egg.Api.csproj">
+      <Project>{52ac94a1-a1c0-43b2-8b1b-001cc11518be}</Project>
+      <Name>Dargon.Nest.Egg.Api</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\nest\Dargon.Nest.Exeggutor.Api\Dargon.Nest.Exeggutor.Api.csproj">
+      <Project>{7d1d757d-531b-49f0-8f63-b4e3563be606}</Project>
+      <Name>Dargon.Nest.Exeggutor.Api</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\nest\Dargon.Nest.Exeggutor.Host.Api\Dargon.Nest.Exeggutor.Host.Api.csproj">
+      <Project>{9c76f6ee-dac8-436a-8623-a8578353dfb9}</Project>
+      <Name>Dargon.Nest.Exeggutor.Host.Api</Name>
     </ProjectReference>
     <ProjectReference Include="..\nest-bundle\nest-bundle.csproj">
       <Project>{b851b3ca-8dcb-48e9-af1a-a4a9800d78b4}</Project>
       <Name>nest-bundle</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\nest\Dargon.Nest.Egg.Api\Dargon.Nest.Egg.Api.csproj">
-      <Project>{52ac94a1-a1c0-43b2-8b1b-001cc11518be}</Project>
-      <Name>Dargon.Nest.Egg.Api</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\nest\Dargon.Nest.Exeggutor.Api\Dargon.Nest.Exeggutor.Api.csproj">
-      <Project>{7d1d757d-531b-49f0-8f63-b4e3563be606}</Project>
-      <Name>Dargon.Nest.Exeggutor.Api</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\nest\Dargon.Nest.Exeggutor.Host.Api\Dargon.Nest.Exeggutor.Host.Api.csproj">
-      <Project>{9c76f6ee-dac8-436a-8623-a8578353dfb9}</Project>
-      <Name>Dargon.Nest.Exeggutor.Host.Api</Name>
     </ProjectReference>
     <ProjectReference Include="..\trinket-bundle\trinket-bundle.csproj">
       <Project>{c3b730ef-991e-448b-818f-1dc1a72141b3}</Project>

@@ -4,17 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{48649876-B379-406B-90C7-C81E6001FB0E}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{C3B730EF-991E-448B-818F-1DC1A72141B3}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>start_nest_and_core</RootNamespace>
-    <AssemblyName>start-nest-and-core</AssemblyName>
+    <RootNamespace>trinket_bundle</RootNamespace>
+    <AssemblyName>trinket-bundle</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -43,29 +40,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\core-bundle\core-bundle.csproj">
-      <Project>{55278C7A-3D94-433B-B459-B3D9D2CDA96E}</Project>
-      <Name>core-bundle</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Dargon.Nest.DevelopmentUtilities\Dargon.Nest.DevelopmentUtilities.csproj">
       <Project>{480E9F3C-57A2-4E52-9F13-6708EDE5BDD1}</Project>
       <Name>Dargon.Nest.DevelopmentUtilities</Name>
     </ProjectReference>
-    <ProjectReference Include="..\nest-bundle\nest-bundle.csproj">
-      <Project>{b851b3ca-8dcb-48e9-af1a-a4a9800d78b4}</Project>
-      <Name>nest-bundle</Name>
+    <ProjectReference Include="..\..\dargon\trinket-proxy\trinket-proxy.csproj">
+      <Project>{00dc580f-4a8c-4b62-915e-e22095c49b0e}</Project>
+      <Name>trinket-proxy</Name>
     </ProjectReference>
-    <ProjectReference Include="..\trinket-bundle\trinket-bundle.csproj">
-      <Project>{C3B730EF-991E-448B-818F-1DC1A72141B3}</Project>
-      <Name>trinket-bundle</Name>
-    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

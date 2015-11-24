@@ -4,13 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C3B730EF-991E-448B-818F-1DC1A72141B3}</ProjectGuid>
+    <ProjectGuid>{480E9F3C-57A2-4E52-9F13-6708EDE5BDD1}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>trinket_bundle</RootNamespace>
-    <AssemblyName>trinket-bundle</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <RootNamespace>Dargon.Nest.DevelopmentUtilities</RootNamespace>
+    <AssemblyName>Dargon.Nest.DevelopmentUtilities</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -40,21 +41,38 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="NestDeployer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Dargon.Nest.DevelopmentUtilities\Dargon.Nest.DevelopmentUtilities.csproj">
-      <Project>{480E9F3C-57A2-4E52-9F13-6708EDE5BDD1}</Project>
-      <Name>Dargon.Nest.DevelopmentUtilities</Name>
+    <ProjectReference Include="..\..\dependencies\Dargon.Ryu\Dargon.Ryu.Api\Dargon.Ryu.Api.csproj">
+      <Project>{be844deb-2f95-407e-973e-ae3f3983b54d}</Project>
+      <Name>Dargon.Ryu.Api</Name>
     </ProjectReference>
-    <ProjectReference Include="..\dargon\trinket-proxy\trinket-proxy.csproj">
-      <Project>{00dc580f-4a8c-4b62-915e-e22095c49b0e}</Project>
-      <Name>trinket-proxy</Name>
+    <ProjectReference Include="..\..\dependencies\Dargon.Ryu\Dargon.Ryu.Impl\Dargon.Ryu.Impl.csproj">
+      <Project>{2ed5c703-8a91-4701-9ae9-da86aa93a169}</Project>
+      <Name>Dargon.Ryu.Impl</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
+    <ProjectReference Include="..\..\dependencies\ItzWarty.Commons\ItzWarty.Commons.csproj">
+      <Project>{097b6b08-4034-408a-b3c0-a12e8f9e8893}</Project>
+      <Name>ItzWarty.Commons</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\dependencies\ItzWarty.Proxies.Api\ItzWarty.Proxies.Api.csproj">
+      <Project>{6aaa4f38-0c18-4d29-b7a2-edddd08dc5ff}</Project>
+      <Name>ItzWarty.Proxies.Api</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\dependencies\ItzWarty.Proxies.Impl\ItzWarty.Proxies.Impl.csproj">
+      <Project>{16a9f397-500c-4863-bb0e-ac2fa63214a1}</Project>
+      <Name>ItzWarty.Proxies.Impl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\nest\Dargon.Nest\Dargon.Nest.csproj">
+      <Project>{fec88ce6-2d59-41da-9608-00ef6ec91e76}</Project>
+      <Name>Dargon.Nest</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\nest\init\init.csproj">
+      <Project>{45029d9f-c2a1-45e6-b461-90fb89196063}</Project>
+      <Name>init</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

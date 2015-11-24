@@ -4,16 +4,17 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9742ED8D-6C30-4F17-93FD-D1A09164C6FB}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <ProjectGuid>{48649876-B379-406B-90C7-C81E6001FB0E}</ProjectGuid>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>client_bundle</RootNamespace>
-    <AssemblyName>client-bundle</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <RootNamespace>start_nest_and_core</RootNamespace>
+    <AssemblyName>start-nest-and-core</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <TargetFrameworkProfile />
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,6 +24,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -31,10 +33,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Dargon.Nest.Egg.Api">
-      <HintPath>..\packages\Dargon.Nest.Egg.Api.0.1.1\lib\net45\Dargon.Nest.Egg.Api.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -45,37 +43,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ClientBundle.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\core-bundle\core-bundle.csproj">
+      <Project>{55278c7a-3d94-433b-b459-b3d9d2cda96e}</Project>
+      <Name>core-bundle</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Dargon.Nest.DevelopmentUtilities\Dargon.Nest.DevelopmentUtilities.csproj">
-      <Project>{480E9F3C-57A2-4E52-9F13-6708EDE5BDD1}</Project>
+      <Project>{480e9f3c-57a2-4e52-9f13-6708ede5bdd1}</Project>
       <Name>Dargon.Nest.DevelopmentUtilities</Name>
     </ProjectReference>
-    <ProjectReference Include="..\dargon\dargon-client\dargon-client.csproj">
-      <Project>{D2601FFA-E998-4801-A770-08CB4A6EC60F}</Project>
-      <Name>dargon-client</Name>
+    <ProjectReference Include="..\nest-bundle\nest-bundle.csproj">
+      <Project>{b851b3ca-8dcb-48e9-af1a-a4a9800d78b4}</Project>
+      <Name>nest-bundle</Name>
     </ProjectReference>
-    <ProjectReference Include="..\dargon\thumbnail-generator\thumbnail-generator.csproj">
-      <Project>{4C6076F7-B28C-4DAC-AFD0-FA517E0082A6}</Project>
-      <Name>thumbnail-generator</Name>
+    <ProjectReference Include="..\trinket-bundle\trinket-bundle.csproj">
+      <Project>{c3b730ef-991e-448b-818f-1dc1a72141b3}</Project>
+      <Name>trinket-bundle</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="init.json" />
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

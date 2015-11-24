@@ -48,19 +48,19 @@
       <Project>{480e9f3c-57a2-4e52-9f13-6708ede5bdd1}</Project>
       <Name>Dargon.Nest.DevelopmentUtilities</Name>
     </ProjectReference>
-    <ProjectReference Include="..\nest\nest-host\nest-host.csproj">
+    <ProjectReference Include="..\..\nest\nest-host\nest-host.csproj">
       <Project>{aa159659-6988-4a37-b849-8f2c090e415c}</Project>
       <Name>nest-host</Name>
     </ProjectReference>
-    <ProjectReference Include="..\nest\nest-spawner\nest-spawner.csproj">
+    <ProjectReference Include="..\..\nest\nest-spawner\nest-spawner.csproj">
       <Project>{24793f93-0fd8-4ec9-b1d2-028db489b10d}</Project>
       <Name>nest-spawner</Name>
     </ProjectReference>
-    <ProjectReference Include="..\nest\nestd\nestd.csproj">
+    <ProjectReference Include="..\..\nest\nestd\nestd.csproj">
       <Project>{6a07d05b-4c55-44a7-a13f-43cf768a6adf}</Project>
       <Name>nestd</Name>
     </ProjectReference>
-    <ProjectReference Include="..\nest\nest\nest.csproj">
+    <ProjectReference Include="..\..\nest\nest\nest.csproj">
       <Project>{8da20e5b-af5d-4494-ac0c-6646019fa36e}</Project>
       <Name>nest</Name>
     </ProjectReference>
