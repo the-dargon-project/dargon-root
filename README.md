@@ -16,8 +16,7 @@ Individuals who have contributed to Dargon in no particular order: Michael "ItzW
 Special thanks goes to: Brian Chan, Richard Min, and a ton of mentors. Also, velkor2, yourbuddypal, themantrum, and GorbyRU for their efforts back in 2011.
 
 ## Building The Dargon Client
-* git clone [this repository] .
-* git submodule update --init
+* git clone --recursive git@github.com:the-dargon-project/dargon-root.git
 * explorer dargon-root.sln (or just manually open it)
 * build the entire project to restore nuget packages
 * git reset --hard
