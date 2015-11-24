@@ -1,0 +1,120 @@
+[submodule "dependencies/ItzWarty.Commons"]
+	path = dependencies/ItzWarty.Commons
+	url = git@github.com:the-dargon-project/ItzWarty.Commons.git
+	branch = master
+[submodule "dependencies/Dargon.Courier"]
+	path = dependencies/Dargon.Courier
+	url = git@github.com:the-dargon-project/Dargon.Courier.git
+	branch = master
+[submodule "dependencies/Dargon.PortableObjects"]
+	path = dependencies/Dargon.PortableObjects
+	url = git@github.com:the-dargon-project/Dargon.PortableObjects.git
+	branch = master
+[submodule "dependencies/NMockito"]
+	path = dependencies/NMockito
+	url = git@github.com:the-dargon-project/NMockito.git
+	branch = master
+[submodule "dependencies/Dargon.PortableObject.Streams"]
+	path = dependencies/Dargon.PortableObject.Streams
+	url = git@github.com:the-dargon-project/Dargon.PortableObject.Streams.git
+	branch = master
+[submodule "dependencies/Dargon.IO"]
+	path = dependencies/Dargon.IO
+	url = git@github.com:the-dargon-project/Dargon.IO.git
+	branch = master
+[submodule "dependencies/Dargon.SystemState.Api"]
+	path = dependencies/Dargon.SystemState.Api
+	url = git@github.com:the-dargon-project/Dargon.SystemState.Api.git
+	branch = master
+[submodule "platform/Dargon.Hydar"]
+	path = platform/Dargon.Hydar
+	url = git@github.com:the-dargon-project/Dargon.Hydar.git
+	branch = master
+[submodule "dependencies/Dargon.Services"]
+	path = dependencies/Dargon.Services
+	url = git@github.com:the-dargon-project/Dargon.Services.git
+	branch = master
+[submodule "dependencies/Dargon.Ryu"]
+	path = dependencies/Dargon.Ryu
+	url = git@github.com:the-dargon-project/Dargon.Ryu.git
+	branch = master
+[submodule "dependencies/Dargon.Management.Impl"]
+	path = dependencies/Dargon.Management.Impl
+	url = git@github.com:the-dargon-project/Dargon.Management.Impl.git
+	branch = master
+[submodule "dependencies/ItzWarty.Proxies.Impl"]
+	path = dependencies/ItzWarty.Proxies.Impl
+	url = git@github.com:the-dargon-project/ItzWarty.Proxies.Impl.git
+	branch = master
+[submodule "dependencies/ItzWarty.Proxies.Api"]
+	path = dependencies/ItzWarty.Proxies.Api
+	url = git@github.com:the-dargon-project/ItzWarty.Proxies.Api.git
+	branch = master
+[submodule "dependencies/Dargon.Utilities"]
+	path = dependencies/Dargon.Utilities
+	url = git@github.com:the-dargon-project/Dargon.Utilities.git
+	branch = master
+[submodule "dependencies/Dargon.Scene.Api"]
+	path = dependencies/Dargon.Scene.Api
+	url = git@github.com:the-dargon-project/Dargon.Scene.Api.git
+	branch = master
+[submodule "dependencies/Dargon.Transport"]
+	path = dependencies/Dargon.Transport
+	url = git@github.com:the-dargon-project/Dargon.Transport.git
+	branch = master
+[submodule "dependencies/dargon.management-interface"]
+	path = dependencies/dargon.management-interface
+	url = git@github.com:the-dargon-project/dargon.management-interface.git
+	branch = master
+[submodule "dependencies/Dargon.VirtualFileMaps"]
+	path = dependencies/Dargon.VirtualFileMaps
+	url = https://github.com/the-dargon-project/Dargon.VirtualFileMaps
+	branch = master
+[submodule "dependencies/Dargon.Repl"]
+	path = dependencies/Dargon.Repl
+	url = git@github.com:the-dargon-project/Dargon.Repl.git
+	branch = master
+[submodule "dependencies/Dargon.League.WGEO"]
+	path = dependencies/Dargon.League.WGEO
+	url = git@github.com:the-dargon-project/Dargon.League.WGEO.git
+	branch = master
+[submodule "dependencies/Dargon.Audits.Api"]
+	path = dependencies/Dargon.Audits.Api
+	url = git@github.com:the-dargon-project/Dargon.Audits.Api.git
+	branch = master
+[submodule "dependencies/Dargon.FileSystems.Impl"]
+	path = dependencies/Dargon.FileSystems.Impl
+	url = git@github.com:the-dargon-project/Dargon.FileSystems.Impl.git
+	branch = master
+[submodule "dependencies/Dargon.FileSystems.Api"]
+	path = dependencies/Dargon.FileSystems.Api
+	url = git@github.com:the-dargon-project/Dargon.FileSystems.Api.git
+	branch = master
+[submodule "dependencies/Dargon.RADS"]
+	path = dependencies/Dargon.RADS
+	url = git@github.com:the-dargon-project/Dargon.RADS.git
+	branch = master
+[submodule "dependencies/Dargon.Management.Api"]
+	path = dependencies/Dargon.Management.Api
+	url = git@github.com:the-dargon-project/Dargon.Management.Api.git
+	branch = master
+[submodule "dependencies/Dargon.TestUtilities"]
+	path = dependencies/Dargon.TestUtilities
+	url = git@github.com:the-dargon-project/Dargon.TestUtilities.git
+	branch = master
+[submodule "dependencies/Dargon.Audits.Impl.Db"]
+	path = dependencies/Dargon.Audits.Impl.Db
+	url = git@github.com:the-dargon-project/Dargon.Audits.Impl.Db.git
+	branch = master
+[submodule "dargon"]
+	path = dargon
+	url = git@github.com:the-dargon-project/the-dargon-project.git
+	branch = master
+[submodule "nest"]
+	path = nest
+	url = git@github.com:the-dargon-project/Dargon.Nest.git
+	branch = master
+[submodule "dependencies/model-viewer"]
+	path = dependencies/model-viewer
+	url = git@github.com:the-dargon-project/model-viewer.git
+	branch = master
