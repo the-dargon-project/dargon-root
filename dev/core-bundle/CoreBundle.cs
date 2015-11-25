@@ -5,7 +5,7 @@ using Dargon.Nest.DevelopmentUtilities;
 
 namespace core_bundle {
    public class CoreBundle : DevelopmentBundle {
-      public override string Name => "client";
+      public override string Name => "core";
 
       public CoreBundle() {
          Eggs.Add(NestEgg.FromProject("cored", typeof(CoreDaemonApplicationEgg)));

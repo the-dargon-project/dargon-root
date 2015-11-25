@@ -5,6 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Threading;
+using dev_egg_runner;
 using Dargon.Ryu;
 using ItzWarty;
 using ItzWarty.IO;
@@ -62,7 +63,14 @@ namespace Dargon.Nest.DevelopmentUtilities {
 
             var bundleNest = new LocalDargonNest(bundleNestPath);
             foreach (var egg in bundle.Eggs) {
-               bundleNest.InstallEgg(new InMemoryEgg(egg.Name, "dev", egg.SourceDirectory));
+               var progress = new CliProgressSpinner($"Installing egg {bundle.Name}/{egg.Name}.");
+               var updateState = new UpdateState();
+               updateState.PropertyChanged += (s, e) => {
+                  progress.Update((float)updateState.SubProgress);
+               };
+               bundleNest.InstallEgg(
+                  new InMemoryEgg(egg.Name, "dev", egg.SourceDirectory),
+                  updateState);
             }
 
             if (!string.IsNullOrWhiteSpace(bundle.InitScript)) {
@@ -85,6 +93,26 @@ namespace Dargon.Nest.DevelopmentUtilities {
                UseShellExecute = true
             });
       }
+      public static void KillOnCtrlC(int port = 21337) {
+         var spinner = new CliProgressSpinner("Ctrl+C = Kill Nest");
+         Console.CancelKeyPress += (s, e) => {
+            var commanderName = "dev-nest-commander";
+            var commanderProject = NestEgg.FromProject(commanderName, typeof(CommanderNestBundleDummy));
+            var commanderPath = Path.Combine(commanderProject.SourceDirectory, commanderName + ".exe");
+
+            Process.Start(
+               new ProcessStartInfo(
+                  commanderPath,
+                  $"-p {port} -c kill-nest") {
+                  UseShellExecute = true
+               });
+            Environment.Exit(0);
+         };
+         while (true) {
+            spinner.Update();
+            Thread.Sleep(125);
+         }
+      }
    }
 
    public abstract class DevelopmentBundle {
@@ -102,10 +130,12 @@ namespace Dargon.Nest.DevelopmentUtilities {
       }
 
       public static NestEgg FromRelativeProject(string name, Type projectType, string relativeProjectDirectoryPath) {
+
          var codeBase = new Uri(projectType.Assembly.CodeBase).AbsolutePath;
          var projectName = new FileInfo(codeBase).Name.Pass(x => x.Substring(0, x.Length - 4));
          var csprojName = $"{projectName}.csproj";
-         Console.WriteLine($"Searching for project `{name}` with project file `{csprojName}`.");
+         var progress = new CliProgressSpinner($"{name}");
+         progress.Update("Finding Project File");
          var matches = Directory.GetFiles(NestDeployerConstants.RootSolutionDirectoryPath, csprojName, SearchOption.AllDirectories);
          if (matches.Length == 0) {
             throw new FileNotFoundException($"Couldn't find {csprojName}!");
@@ -115,7 +145,7 @@ namespace Dargon.Nest.DevelopmentUtilities {
          var match = matches.First();
          var matchDirectory = Path.GetDirectoryName(match);
          var finalPath = Path.GetFullPath(Path.Combine(matchDirectory, relativeProjectDirectoryPath));
-         Console.WriteLine(finalPath);
+         progress.Update(finalPath);
          return new NestEgg() {
             Name = name,
             SourceDirectory = Path.Combine(finalPath, "bin", "Debug")

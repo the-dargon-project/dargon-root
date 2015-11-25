@@ -15,6 +15,7 @@ namespace start_nest_core_and_client {
             new ClientBundle()
          );
          NestDeployer.ExecInit(21999);
+         NestDeployer.KillOnCtrlC(21999);
       }
    }
 }

@@ -13,6 +13,7 @@ namespace start_nest_and_core {
             new TrinketBundle()
          );
          NestDeployer.ExecInit(21999);
+         NestDeployer.KillOnCtrlC(21999);
       }
    }
 }

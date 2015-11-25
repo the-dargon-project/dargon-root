@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConsoleGUI.cs" />
     <Compile Include="NestDeployer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -68,6 +69,10 @@
     <ProjectReference Include="..\..\nest\Dargon.Nest\Dargon.Nest.csproj">
       <Project>{fec88ce6-2d59-41da-9608-00ef6ec91e76}</Project>
       <Name>Dargon.Nest</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\nest\dev-nest-commander\dev-nest-commander.csproj">
+      <Project>{402f5c4e-504a-4b1e-a881-0c4cffd3d6ed}</Project>
+      <Name>dev-nest-commander</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\nest\init\init.csproj">
       <Project>{45029d9f-c2a1-45e6-b461-90fb89196063}</Project>
