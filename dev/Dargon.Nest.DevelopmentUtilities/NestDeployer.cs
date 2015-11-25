@@ -106,7 +106,8 @@ namespace Dargon.Nest.DevelopmentUtilities {
                   $"-p {port} -c kill-nest") {
                   UseShellExecute = true
                });
-            Environment.Exit(0);
+            e.Cancel = false;
+//            Environment.Exit(0);
          };
          while (true) {
             spinner.Update();

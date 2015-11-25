@@ -318,6 +318,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nest-bundle", "dev\nest-bundle\nest-bundle.csproj", "{B851B3CA-8DCB-48E9-AF1A-A4A9800D78B4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "trinket-bundle", "dev\trinket-bundle\trinket-bundle.csproj", "{C3B730EF-991E-448B-818F-1DC1A72141B3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D1C97EAF-0503-4031-A690-CD6CCAD48C5A} = {D1C97EAF-0503-4031-A690-CD6CCAD48C5A}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "client-bundle", "dev\client-bundle\client-bundle.csproj", "{9742ED8D-6C30-4F17-93FD-D1A09164C6FB}"
 EndProject
