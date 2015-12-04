@@ -9,8 +9,13 @@ Nest/Dargon (aka Dargopia) aims to become a .net application framework. End goal
 ### Maintainers and Contributors
 You may contact me at [/r/dargon](//reddit.com/r/dargon) or [@ItzWarty](//twitter.com/ItzWarty).
 
+#### Current Team
+* Michael "ItzWarty" Yu - Owns development.
+* Eduardo "Inflames" Cabrera - User advocate, owns production.
+
 We want more developers! If you're looking to help out, there's a lot of up-for-grabs and cool stuff to be done.
 
+#### Past Contributors
 Individuals who have contributed to Dargon in no particular order: Michael "ItzWarty" Yu, Adrian Astley, Ryan LaSarre, Eduardo Cabrera.
 
 Special thanks goes to: Brian Chan, Richard Min, and a ton of mentors. Also, velkor2, yourbuddypal, themantrum, and GorbyRU for their efforts back in 2011.
