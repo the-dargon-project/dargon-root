@@ -4,7 +4,7 @@ using Dargon.Daemon;
 using Dargon.Nest.DevelopmentUtilities;
 
 namespace core_bundle {
-   public class CoreBundle : DevelopmentBundle {
+   public class CoreBundle : DevBundle {
       public override string Name => "core";
 
       public CoreBundle() {

@@ -4,18 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0C34F00A-3235-4E16-BB79-7467F47D3CF7}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{664BC68C-1AAF-4F03-B193-C142200A8A29}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>start_nest_core_and_client</RootNamespace>
-    <AssemblyName>start-nest-core-and-client</AssemblyName>
+    <RootNamespace>dargon_client</RootNamespace>
+    <AssemblyName>dargon-client-deployment</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -25,7 +23,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -44,17 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="DargonClientDeployment.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\dargon-client-deployment\dargon-client-deployment.csproj">
-      <Project>{664bc68c-1aaf-4f03-b193-c142200a8a29}</Project>
-      <Name>dargon-client-deployment</Name>
-    </ProjectReference>
     <ProjectReference Include="..\client-bundle\client-bundle.csproj">
       <Project>{9742ed8d-6c30-4f17-93fd-d1a09164c6fb}</Project>
       <Name>client-bundle</Name>
@@ -66,22 +56,6 @@
     <ProjectReference Include="..\Dargon.Nest.DevelopmentUtilities\Dargon.Nest.DevelopmentUtilities.csproj">
       <Project>{480e9f3c-57a2-4e52-9f13-6708ede5bdd1}</Project>
       <Name>Dargon.Nest.DevelopmentUtilities</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\dependencies\Dargon.PortableObjects\Dargon.PortableObjects.csproj">
-      <Project>{da87b9e0-3584-4448-97b5-9877cac44352}</Project>
-      <Name>Dargon.PortableObjects</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\nest\Dargon.Nest.Egg.Api\Dargon.Nest.Eggs.Api.csproj">
-      <Project>{52ac94a1-a1c0-43b2-8b1b-001cc11518be}</Project>
-      <Name>Dargon.Nest.Eggs.Api</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\nest\Dargon.Nest.Exeggutor.Api\Dargon.Nest.Exeggutor.Api.csproj">
-      <Project>{7d1d757d-531b-49f0-8f63-b4e3563be606}</Project>
-      <Name>Dargon.Nest.Exeggutor.Api</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\nest\Dargon.Nest.Exeggutor.Host.Api\Dargon.Nest.Exeggutor.Host.Api.csproj">
-      <Project>{9c76f6ee-dac8-436a-8623-a8578353dfb9}</Project>
-      <Name>Dargon.Nest.Exeggutor.Host.Api</Name>
     </ProjectReference>
     <ProjectReference Include="..\nest-bundle\nest-bundle.csproj">
       <Project>{b851b3ca-8dcb-48e9-af1a-a4a9800d78b4}</Project>

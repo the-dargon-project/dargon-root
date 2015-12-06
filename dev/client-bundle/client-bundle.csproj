@@ -31,10 +31,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Dargon.Nest.Egg.Api">
-      <HintPath>..\packages\Dargon.Nest.Egg.Api.0.1.1\lib\net45\Dargon.Nest.Egg.Api.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -54,6 +50,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\nest\Dargon.Nest.Egg.Api\Dargon.Nest.Eggs.Api.csproj">
+      <Project>{52ac94a1-a1c0-43b2-8b1b-001cc11518be}</Project>
+      <Name>Dargon.Nest.Eggs.Api</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Dargon.Nest.DevelopmentUtilities\Dargon.Nest.DevelopmentUtilities.csproj">
       <Project>{480E9F3C-57A2-4E52-9F13-6708EDE5BDD1}</Project>
       <Name>Dargon.Nest.DevelopmentUtilities</Name>

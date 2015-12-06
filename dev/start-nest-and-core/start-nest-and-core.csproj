@@ -9,9 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>start_nest_and_core</RootNamespace>
     <AssemblyName>start-nest-and-core</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -50,6 +51,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\dargon-client-deployment\dargon-client-deployment.csproj">
+      <Project>{664bc68c-1aaf-4f03-b193-c142200a8a29}</Project>
+      <Name>dargon-client-deployment</Name>
+    </ProjectReference>
     <ProjectReference Include="..\core-bundle\core-bundle.csproj">
       <Project>{55278c7a-3d94-433b-b459-b3d9d2cda96e}</Project>
       <Name>core-bundle</Name>

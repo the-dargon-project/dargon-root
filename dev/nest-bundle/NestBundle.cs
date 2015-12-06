@@ -5,7 +5,7 @@ using nest_host;
 using nest_spawner;
 
 namespace nest_bundle {
-   public class NestBundle : DevelopmentBundle {
+   public class NestBundle : DevBundle {
       public override string Name => "nest";
 
       public NestBundle() {

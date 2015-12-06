@@ -42,7 +42,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConsoleGUI.cs" />
+    <Compile Include="DevBundle.cs" />
+    <Compile Include="DevDeployment.cs" />
     <Compile Include="NestDeployer.cs" />
+    <Compile Include="NestDeployerConstants.cs" />
+    <Compile Include="NestEgg.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -2,7 +2,7 @@
 using Dargon.Trinkets.Proxy;
 
 namespace trinket_bundle {
-   public class TrinketBundle : DevelopmentBundle {
+   public class TrinketBundle : DevBundle {
       public override string Name => "trinket";
 
       public TrinketBundle() {
