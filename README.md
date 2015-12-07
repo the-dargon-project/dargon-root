@@ -11,7 +11,8 @@ You may contact me at [/r/dargon](//reddit.com/r/dargon) or [@ItzWarty](//twitte
 
 #### Current Team
 * Michael "ItzWarty" Yu - Owns development.
-* Eduardo "Inflames" Cabrera - User advocate, owns production.
+* Eduardo "Inflames" Cabrera - User advocate, owns production. 
+* Adrian "RichieSams" Astley - Another developer, also awesome.
 
 We want more developers! If you're looking to help out, there's a lot of up-for-grabs and cool stuff to be done.
 
