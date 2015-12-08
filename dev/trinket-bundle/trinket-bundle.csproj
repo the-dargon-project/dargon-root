@@ -45,6 +45,14 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\dargon\trinket-managed\trinket-managed.csproj">
+      <Project>{6615ab36-20b2-4f72-b5bf-7134e06f74c5}</Project>
+      <Name>trinket-managed</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\nest\Dargon.Nest.Egg.Api\Dargon.Nest.Eggs.Api.csproj">
+      <Project>{52ac94a1-a1c0-43b2-8b1b-001cc11518be}</Project>
+      <Name>Dargon.Nest.Eggs.Api</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Dargon.Nest.DevelopmentUtilities\Dargon.Nest.DevelopmentUtilities.csproj">
       <Project>{480E9F3C-57A2-4E52-9F13-6708EDE5BDD1}</Project>
       <Name>Dargon.Nest.DevelopmentUtilities</Name>
