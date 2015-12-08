@@ -6,8 +6,8 @@ namespace trinket_bundle {
       public override string Name => "trinket";
 
       public TrinketBundle() {
-         Eggs.Add(NestEgg.FromProject("trinket-proxy", typeof(TrinketProxyEgg)));
-         Eggs.Add(NestEgg.FromRelativeProject("trinket-dim", typeof(TrinketProxyEgg), "../DargonInjectedModule"));
+         Eggs.Add(DevEgg.FromProject("trinket-proxy", typeof(TrinketProxyApplication)));
+         Eggs.Add(DevEgg.FromRelativeProject("trinket-dim", typeof(TrinketProxyApplication), "../DargonInjectedModule"));
       }
    }
 }

@@ -46,7 +46,7 @@
     <Compile Include="DevDeployment.cs" />
     <Compile Include="NestDeployer.cs" />
     <Compile Include="NestDeployerConstants.cs" />
-    <Compile Include="NestEgg.cs" />
+    <Compile Include="DevEgg.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -82,6 +82,9 @@
       <Project>{45029d9f-c2a1-45e6-b461-90fb89196063}</Project>
       <Name>init</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

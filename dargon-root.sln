@@ -108,6 +108,7 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "trinket-dim", "dargon\DargonInjectedModule\Dargon - Injected Module.vcxproj", "{D1C97EAF-0503-4031-A690-CD6CCAD48C5A}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6615AB36-20B2-4F72-B5BF-7134E06F74C5} = {6615AB36-20B2-4F72-B5BF-7134E06F74C5}
+		{52D8CBEE-1B14-4FCA-B824-096A43776456} = {52D8CBEE-1B14-4FCA-B824-096A43776456}
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dargon.Courier.Api", "dependencies\Dargon.Courier\Dargon.Courier\Dargon.Courier.Api.csproj", "{00A1DA2F-D316-4387-8BD4-F1A47C05A402}"
@@ -373,6 +374,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "deployments", "deployments", "{A08D2FFF-95DB-4951-9023-BD4C27CA8CB4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dargon-client-deployment", "dev\dargon-client-deployment\dargon-client-deployment.csproj", "{664BC68C-1AAF-4F03-B193-C142200A8A29}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "deploy-nest-core-and-client", "dev\deploy-nest-core-and-client\deploy-nest-core-and-client.csproj", "{F6222CE1-C6F4-4FF5-BFBD-703333114D24}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -2727,6 +2730,24 @@ Global
 		{664BC68C-1AAF-4F03-B193-C142200A8A29}.Release|x64.Build.0 = Release|Any CPU
 		{664BC68C-1AAF-4F03-B193-C142200A8A29}.Release|x86.ActiveCfg = Release|Any CPU
 		{664BC68C-1AAF-4F03-B193-C142200A8A29}.Release|x86.Build.0 = Release|Any CPU
+		{F6222CE1-C6F4-4FF5-BFBD-703333114D24}.Console|Any CPU.ActiveCfg = Release|Any CPU
+		{F6222CE1-C6F4-4FF5-BFBD-703333114D24}.Console|Any CPU.Build.0 = Release|Any CPU
+		{F6222CE1-C6F4-4FF5-BFBD-703333114D24}.Console|x64.ActiveCfg = Release|Any CPU
+		{F6222CE1-C6F4-4FF5-BFBD-703333114D24}.Console|x64.Build.0 = Release|Any CPU
+		{F6222CE1-C6F4-4FF5-BFBD-703333114D24}.Console|x86.ActiveCfg = Release|Any CPU
+		{F6222CE1-C6F4-4FF5-BFBD-703333114D24}.Console|x86.Build.0 = Release|Any CPU
+		{F6222CE1-C6F4-4FF5-BFBD-703333114D24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6222CE1-C6F4-4FF5-BFBD-703333114D24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6222CE1-C6F4-4FF5-BFBD-703333114D24}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{F6222CE1-C6F4-4FF5-BFBD-703333114D24}.Debug|x64.Build.0 = Debug|Any CPU
+		{F6222CE1-C6F4-4FF5-BFBD-703333114D24}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F6222CE1-C6F4-4FF5-BFBD-703333114D24}.Debug|x86.Build.0 = Debug|Any CPU
+		{F6222CE1-C6F4-4FF5-BFBD-703333114D24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6222CE1-C6F4-4FF5-BFBD-703333114D24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6222CE1-C6F4-4FF5-BFBD-703333114D24}.Release|x64.ActiveCfg = Release|Any CPU
+		{F6222CE1-C6F4-4FF5-BFBD-703333114D24}.Release|x64.Build.0 = Release|Any CPU
+		{F6222CE1-C6F4-4FF5-BFBD-703333114D24}.Release|x86.ActiveCfg = Release|Any CPU
+		{F6222CE1-C6F4-4FF5-BFBD-703333114D24}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -2900,5 +2921,6 @@ Global
 		{0ED45046-0E3D-42EC-814A-8E8BCD1FFE28} = {18439844-AFEB-46FA-8CF8-0C5138261415}
 		{A08D2FFF-95DB-4951-9023-BD4C27CA8CB4} = {18439844-AFEB-46FA-8CF8-0C5138261415}
 		{664BC68C-1AAF-4F03-B193-C142200A8A29} = {A08D2FFF-95DB-4951-9023-BD4C27CA8CB4}
+		{F6222CE1-C6F4-4FF5-BFBD-703333114D24} = {18439844-AFEB-46FA-8CF8-0C5138261415}
 	EndGlobalSection
 EndGlobal

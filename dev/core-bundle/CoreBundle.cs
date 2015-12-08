@@ -8,8 +8,8 @@ namespace core_bundle {
       public override string Name => "core";
 
       public CoreBundle() {
-         Eggs.Add(NestEgg.FromProject("cored", typeof(CoreDaemonApplicationEgg)));
-         Eggs.Add(NestEgg.FromProject("dargon-cli", typeof(DargonCliBundleDummyClass)));
+         Eggs.Add(DevEgg.FromProject("cored", typeof(CoreDaemonApplication)));
+         Eggs.Add(DevEgg.FromProject("dargon-cli", typeof(DargonCliBundleDummyClass)));
 
          InitScript = Encoding.UTF8.GetString(global::core_bundle.Properties.Resources.init);
       }

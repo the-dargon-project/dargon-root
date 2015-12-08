@@ -5,15 +5,15 @@ using System.Reflection;
 using ItzWarty;
 
 namespace Dargon.Nest.DevelopmentUtilities {
-   public class NestEgg {
+   public class DevEgg {
       public string Name { get; set; }
       public string SourceDirectory { get; set; }
 
-      public static NestEgg FromProject(string name, Type projectType) {
+      public static DevEgg FromProject(string name, Type projectType) {
          return FromRelativeProject(name, projectType, ".");
       }
 
-      public static NestEgg FromRelativeProject(string name, Type projectType, string relativeProjectDirectoryPath) {
+      public static DevEgg FromRelativeProject(string name, Type projectType, string relativeProjectDirectoryPath) {
 
          var codeBase = new Uri(projectType.Assembly.CodeBase).AbsolutePath;
          var projectName = new FileInfo(codeBase).Name.Pass(x => x.Substring(0, x.Length - 4));
@@ -30,7 +30,7 @@ namespace Dargon.Nest.DevelopmentUtilities {
          var matchDirectory = Path.GetDirectoryName(match);
          var finalPath = Path.GetFullPath(Path.Combine(matchDirectory, relativeProjectDirectoryPath));
          progress.Update(finalPath);
-         return new NestEgg() {
+         return new DevEgg() {
             Name = name,
             SourceDirectory = Path.Combine(finalPath, "bin", "Debug")
          };

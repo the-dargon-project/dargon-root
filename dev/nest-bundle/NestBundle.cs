@@ -9,10 +9,10 @@ namespace nest_bundle {
       public override string Name => "nest";
 
       public NestBundle() {
-         Eggs.Add(NestEgg.FromProject("nest", typeof(ReplGlobals)));
-         Eggs.Add(NestEgg.FromProject("nestd", typeof(NestDaemonBundleDummy)));
-         Eggs.Add(NestEgg.FromProject("nest-host", typeof(NestHostBundleDummy)));
-         Eggs.Add(NestEgg.FromProject("nest-spawner", typeof(NestSpawnerBundleDummy)));
+         Eggs.Add(DevEgg.FromProject("nest", typeof(ReplGlobals)));
+         Eggs.Add(DevEgg.FromProject("nestd", typeof(NestDaemonBundleDummy)));
+         Eggs.Add(DevEgg.FromProject("nest-host", typeof(NestHostBundleDummy)));
+         Eggs.Add(DevEgg.FromProject("nest-spawner", typeof(NestSpawnerBundleDummy)));
       }
    }
 }

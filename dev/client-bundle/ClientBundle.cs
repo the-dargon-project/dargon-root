@@ -8,8 +8,8 @@ namespace client_bundle {
       public override string Name => "client";
 
       public ClientBundle() {
-         Eggs.Add(NestEgg.FromProject("dargon-client", typeof(DargonClientEgg)));
-         Eggs.Add(NestEgg.FromProject("thumbnail-generator", typeof(ThumbnailGenerationEgg)));
+         Eggs.Add(DevEgg.FromProject("dargon-client", typeof(DargonClientApplication)));
+         Eggs.Add(DevEgg.FromProject("thumbnail-generator", typeof(ThumbnailGenerationApplication)));
 
          InitScript = Encoding.UTF8.GetString(Properties.Resources.init);
       }

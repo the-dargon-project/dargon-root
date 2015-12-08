@@ -4,6 +4,6 @@ namespace Dargon.Nest.DevelopmentUtilities {
    public abstract class DevBundle {
       public abstract string Name { get; }
       public string InitScript { get; protected set; }
-      public List<NestEgg> Eggs { get; } = new List<NestEgg>();
+      public List<DevEgg> Eggs { get; } = new List<DevEgg>();
    }
 }
