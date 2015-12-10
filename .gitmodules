@@ -114,7 +114,3 @@
 	path = nest
 	url = git@github.com:the-dargon-project/Dargon.Nest.git
 	branch = master
-[submodule "dependencies/model-viewer"]
-	path = dependencies/model-viewer
-	url = git@github.com:the-dargon-project/model-viewer.git
-	branch = master
