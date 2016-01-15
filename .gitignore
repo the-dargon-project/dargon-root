@@ -207,9 +207,12 @@ FakesAssemblies/
 *.opt
 
 # LightSwitch generated files
-GeneratedArtifacts/
+iGeneratedArtifacts/
 _Pvt_Extensions/
 ModelManifest.xml
 
 # Development deploy directory
 deploy/
+
+# opendb from vs2015
+*.opendb
